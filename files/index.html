@@ -31,7 +31,7 @@ display: block;
   </head>
   <body>
     <main>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Offcanvas navbar large"> 
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Offcanvas navbar large" id="nav"> 
         <div class="container">
             <div class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
@@ -130,7 +130,28 @@ display: block;
 
               <div class="col-lg-6 mx-auto">
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                  <a href="1styear.html"><button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Get Started</button></a>
+                   <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Get Started
+                  </button>
+                  <!-- Modal -->
+                  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5 text-black" id="staticBackdropLabel">Modal title</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-black">
+                          Select your year and Department from the navbar to get started.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary text-white" data-bs-dismiss="modal">Understood</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
                   <!-- <button type="button" class="btn btn-outline-light btn-lg px-4">Secondary</button> -->
                 </div>
               </div>
@@ -155,7 +176,7 @@ display: block;
                   <input type="password" class="form-control" id="floatingPassword" placeholder="Password" data-dashlane-rid="9387ccf9ffa0ca9c" data-form-type="password,new" data-kwimpalastatus="alive" data-kwimpalaid="1669995551965-1">
                   <label for="floatingPassword">Password</label>
                 </div>
-                <div class="checkbox mb-3">
+                <div class="checkbox mb-3 ">
                   <label data-dashlane-label="true">
                     <input type="checkbox" value="remember-me" data-dashlane-rid="c544e3c1734e45a3" data-form-type="consent"> Remember me
                   </label>
